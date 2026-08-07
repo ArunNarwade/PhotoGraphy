@@ -1,0 +1,426 @@
+/*========================
+    GOOGLE FONT
+=========================*/
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+    font-family:'Montserrat',sans-serif;
+    background:#070707;
+    color:#fff;
+}
+
+img{
+    width:100%;
+    display:block;
+}
+
+a{
+    text-decoration:none;
+}
+
+ul{
+    list-style:none;
+}
+
+/*========================
+      SECTION
+=========================*/
+
+.packages{
+    padding:100px 8%;
+    background:
+    radial-gradient(circle at top,#1c1c1c,#070707 65%);
+    overflow:hidden;
+}
+
+/*========================
+      TITLE
+=========================*/
+
+.packeg-section-title{
+    text-align:center;
+    max-width:800px;
+    margin:auto;
+    margin-bottom:70px;
+}
+
+.section-title span{
+    color:#d4af37;
+    letter-spacing:4px;
+    font-size:13px;
+    font-weight:600;
+}
+
+.section-title h2{
+    font-family:'Cormorant Garamond',serif;
+    font-size:55px;
+    margin:15px 0;
+}
+
+.section-title p{
+    color:#bbb;
+    line-height:1.8;
+}
+
+/*========================
+      SWIPER
+=========================*/
+
+.packageSwiper{
+    padding:20px 5px 80px;
+}
+
+.swiper-slide{
+    display:flex;
+    justify-content:center;
+    height:auto;
+}
+
+/*========================
+      CARD
+=========================*/
+
+.package-card{
+
+    width:100%;
+    max-width:360px;
+
+    background:#111;
+
+    border:1px solid rgba(255,255,255,.08);
+
+    border-radius:25px;
+
+    padding:30px;
+
+    position:relative;
+
+    transition:.4s;
+
+    overflow:hidden;
+
+}
+
+.package-card:hover{
+
+    transform:translateY(-12px);
+
+    border-color:#d4af37;
+
+    box-shadow:
+    0 20px 40px rgba(0,0,0,.45);
+
+}
+
+/*========================
+      TAG
+=========================*/
+
+.tag{
+
+    position:absolute;
+
+    top:20px;
+    right:-42px;
+
+    background:#d4af37;
+
+    color:#111;
+
+    font-size:11px;
+
+    font-weight:700;
+
+    padding:8px 50px;
+
+    transform:rotate(45deg);
+
+}
+
+.popular{
+    border:2px solid #d4af37;
+}
+
+/*========================
+      IMAGE STACK
+=========================*/
+
+.image-stack{
+
+    display:flex;
+
+    margin-bottom:25px;
+
+}
+
+.image-stack img{
+
+    width:75px;
+    height:75px;
+
+    object-fit:cover;
+
+    border-radius:14px;
+
+    border:3px solid white;
+
+    margin-left:-18px;
+
+    transition:.4s;
+
+}
+
+.image-stack img:first-child{
+    margin-left:0;
+}
+
+.package-card:hover .image-stack img:nth-child(1){
+    transform:rotate(-8deg) translateY(-8px);
+}
+
+.package-card:hover .image-stack img:nth-child(2){
+    transform:rotate(8deg) translateY(-16px);
+}
+
+.package-card:hover .image-stack img:nth-child(3){
+    transform:rotate(-5deg) translateY(-8px);
+}
+
+/*========================
+      TITLE
+=========================*/
+
+.package-card h3{
+
+    font-size:30px;
+
+    font-family:'Cormorant Garamond',serif;
+
+    margin-bottom:15px;
+
+}
+
+/*========================
+      PRICE
+=========================*/
+
+.price{
+
+    font-size:36px;
+
+    color:#d4af37;
+
+    font-weight:700;
+
+    margin-bottom:25px;
+
+}
+
+/*========================
+      LIST
+=========================*/
+
+.package-card ul{
+
+    margin-bottom:30px;
+
+}
+
+.package-card li{
+
+    display:flex;
+
+    align-items:center;
+
+    gap:10px;
+
+    margin-bottom:14px;
+
+    color:#ddd;
+
+}
+
+.package-card li i{
+
+    color:#d4af37;
+
+}
+
+/*========================
+      BUTTON
+=========================*/
+
+.btn{
+
+    display:block;
+
+    text-align:center;
+
+    background:#d4af37;
+
+    color:#111;
+
+    padding:15px;
+
+    border-radius:12px;
+
+    font-weight:700;
+
+    transition:.3s;
+
+}
+
+.btn:hover{
+
+    background:#fff;
+
+    transform:translateY(-3px);
+
+}
+
+/*========================
+      NAVIGATION
+=========================*/
+
+.swiper-button-next,
+.swiper-button-prev{
+
+    color:#d4af37;
+
+    width:50px;
+    height:50px;
+
+    border-radius:50%;
+
+    background:#111;
+
+    border:1px solid rgba(255,255,255,.1);
+
+}
+
+.swiper-button-next::after,
+.swiper-button-prev::after{
+
+    font-size:18px;
+    font-weight:bold;
+
+}
+
+.swiper-button-next:hover,
+.swiper-button-prev:hover{
+
+    background:#d4af37;
+
+    color:#111;
+
+}
+
+/*========================
+      PAGINATION
+=========================*/
+
+.swiper-pagination{
+
+    bottom:5px !important;
+
+}
+
+.swiper-pagination-bullet{
+
+    width:12px;
+    height:12px;
+
+    background:#777;
+
+    opacity:1;
+
+    transition:.3s;
+
+}
+
+.swiper-pagination-bullet-active{
+
+    width:35px;
+
+    border-radius:30px;
+
+    background:#d4af37;
+
+}
+
+/*========================
+      RESPONSIVE
+=========================*/
+
+@media(max-width:992px){
+
+.section-title h2{
+
+font-size:42px;
+
+}
+
+}
+
+@media(max-width:768px){
+
+.packages{
+
+padding:80px 6%;
+
+}
+
+.section-title h2{
+
+font-size:34px;
+
+}
+
+.package-card{
+
+padding:25px;
+
+}
+
+.swiper-button-next,
+.swiper-button-prev{
+
+display:none;
+
+}
+
+}
+
+@media(max-width:480px){
+
+.section-title h2{
+
+font-size:28px;
+
+}
+
+.image-stack img{
+
+width:65px;
+height:65px;
+
+}
+
+.package-card h3{
+
+font-size:25px;
+
+}
+
+.price{
+
+font-size:30px;
+
+}
+
+}
