@@ -964,15 +964,15 @@ hr {
 
 /* ROW DIRECTION & TIMING */
 .alb_row1 .alb_track {
-  animation: alb_scroll_left 32s linear infinite;
+  animation: alb_scroll_left 52s linear infinite;
 }
 
 .alb_row2 .alb_track {
-  animation: alb_scroll_right 35s linear infinite;
+  animation: alb_scroll_right 55s linear infinite;
 }
 
 .alb_row3 .alb_track {
-  animation: alb_scroll_left 30s linear infinite;
+  animation: alb_scroll_left 60s linear infinite;
 }
 
 .alb_track:hover {
